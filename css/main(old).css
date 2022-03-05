@@ -1,0 +1,706 @@
+@font-face {
+    font-family: 'latoblack';
+    src: url('fonts/lato-black-webfont.woff2') format('woff2'),
+         url('fonts/lato-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoblack_italic';
+    src: url('fonts/lato-blackitalic-webfont.woff2') format('woff2'),
+         url('fonts/lato-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latobold';
+    src: url('fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latobold_italic';
+    src: url('fonts/lato-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/lato-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoitalic';
+    src: url('fonts/lato-italic-webfont.woff2') format('woff2'),
+         url('fonts/lato-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('fonts/lato-light-webfont.woff2') format('woff2'),
+         url('fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight_italic';
+    src: url('fonts/lato-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/lato-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latohairline';
+    src: url('fonts/lato-thin-webfont.woff2') format('woff2'),
+         url('fonts/lato-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latohairline_italic';
+    src: url('fonts/lato-thinitalic-webfont.woff2') format('woff2'),
+         url('fonts/lato-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.top-nav{
+    overflow: hidden;
+    margin: auto;
+    background-color: white;
+}
+
+.top-nav a{
+    float: right;
+    padding: 30px 20px;
+    text-decoration: none;
+    color:  gray;
+    font-family: 'latoregular';
+    font-weight: bold;
+    text-align: center;
+}
+
+/* .top-nav a:hover{
+    background-color: gray;
+} */
+
+.top-nav a.left{
+    float: left;
+}
+
+.top-nav a.logo{
+    width: 65px;
+    height: 45px;
+    margin-left: 50px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    background-image: url(images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* object-fit: contain; */
+}
+
+.top-nav .search_container{
+    float: right;
+}
+
+.top-nav input.search_bar{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 20px;
+    margin-right: 0;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    float: right;
+    height: 25px;
+    width: 80px;
+    background-color: darkgrey;
+    border: none;
+}
+
+.top-nav button.search_btn{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 0px;
+    margin-right: 50px;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    float: right;
+    background-color: darkgrey;
+}
+
+.main-img-container{
+    max-width: 100%;
+    height: 900px;
+    position: relative;
+    background-image: url(images/slid.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+
+/* .main-img-container img{
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+} */
+
+.top-img-texture{
+    max-width: 100%;;
+    height: 60px;
+    z-index: 1;
+    background-image: url(images/Shape-top-50.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.top-img-100-texture{
+    max-width: 100%;
+    height: 100px;
+    z-index: 1;
+    background-image: url(images/Shape-top-100.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+
+/* .top-img-full-texture{
+    max-width: 100%;
+    height: 192px;
+    z-index: 1;
+    background-image: url(images/Shape-top.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+} */
+
+.bottom-img-texture{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    background-image: url(images/Shape-bottom-90.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.content-container{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    max-width: 28%;
+}
+
+.header{
+    color: rgb(222, 179, 126);
+    font-size: 50px;
+    font-family: 'latoblack';
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.btn-white{
+    width: 75px;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: darkgray;
+    padding: 5px 10px;
+    font-family: 'latoblack';
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.btn-white:hover{
+    background-color: darkgray;
+    color: white;
+}
+
+p.heading{
+    font-family: 'latoblack_italic';
+    font-style: italic;
+    color: dimgray;
+    padding-top: 5px;
+    margin-bottom: 25px;
+}
+
+p.content{
+    font-family: 'latolight_italic';
+    font-style: italic;
+    margin-top: 30px;
+    color: dimgray;
+    margin-bottom: 10px;
+}
+
+.txt-center{
+    text-align: center;
+}
+
+.txt-right{
+    text-align: right;
+}
+
+.sub-header-container{
+    margin: auto;
+    max-width: 30%;
+    padding-bottom: 20px;
+}
+
+.card-grid-container{
+    margin: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    /*position: relative;
+    background-image: url(images/Design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain; */
+}
+
+.card{
+    margin: auto;
+    max-width: 100%;
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.card-desc{
+    padding: 15px;
+    color: white;
+    max-width: 339px;
+    margin: none;
+    background-color: rgb(127, 119, 112);
+}
+
+.card-title{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-family: 'latoblack';
+}
+
+.card-content{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'latolight';
+}
+
+.btn-container{
+    margin: auto;
+    max-width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.btn-sand{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(226, 163, 85);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'latoblack';
+    font-weight: bolder;
+}
+
+.btn-gray{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(127, 119, 112);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'latoblack';
+    font-weight: bolder;
+}
+
+.btn-sand:hover{
+    background-color: white;
+    color: rgb(226, 163, 85);
+}
+
+.alt-img-container{
+    margin: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0px;
+}
+
+.alt-img img{
+    margin: auto;
+    max-width: 100%;
+}
+
+.alt-desc-left{
+    max-width: 100%;
+    background-color: rgb(222, 179, 126);
+}
+
+.alt-desc-right{
+    max-width: 100%;
+    background-color: rgb(127, 119, 112);
+}
+
+.alt-desc{
+    position: relative;
+    top: 30%;
+    max-width: 100%;
+    color: white;
+    margin: 0px 90px;
+}
+
+.alt-header{
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-family: 'latoblack';
+}
+
+.alt-content{
+    font-size: 20px;
+    font-family: 'latolight';
+    font-weight: lighter;
+    padding-bottom: 30px;
+}
+
+.texture-container{
+    margin: auto;
+    max-width: 100%;
+    height: 400px;
+    color: white;
+    position: relative;
+    /* background-image: url(images/.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain; */
+    background-color: rgb(127, 119, 112);
+}
+
+.texture-sub-container{
+    margin: auto;
+    max-width: 33.33%;
+}
+
+.txtr-header{
+    font-family: 'latoregular';
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.txtr-content{
+    font-family: 'latoregular';
+}
+
+/* .big-img-container{
+    position: relative;
+    max-width: 100%;
+    height: 700px;
+} */
+
+.big-img-container{
+    max-width: 100%;
+    position: relative;
+    height: 800px;
+    background-image: url(images/explore.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.big-img-header{
+    position: relative;
+    top: 30%;
+    left: -10%;
+    font-style: italic;
+}
+
+.big-img-header-2{
+    position: relative;
+    top: 30%;
+    left: -10%;
+    font-style: italic;
+    color: dimgray
+}
+
+.comment-card-container{
+    margin: auto;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    /* height: 300px; */
+    /*position: relative;
+    background-image: url(images/Design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain; */
+}
+
+.comment-card{
+    max-width: 100%;
+    float: left;
+    margin: auto;
+    padding: 15px 50px;
+}
+
+.com-card-title{
+    font-family: 'latoblack';
+    font-weight: bolder;
+    color: rgb(222, 179, 126);
+    padding-bottom: 10px;
+}
+
+.com-card-desc{
+    font-family: 'latoregular';
+    color: dimgray;
+    font-size: small;
+}
+
+.big-comment-img-container{
+    max-width: 100%;
+    /* height: 300px; */
+    /* position: relative;
+    background-image: url(images/Design.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain; */
+}
+
+/* .big-comment-img-container img{
+    position: absolute;
+    right: 0%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+} */
+
+.big-com-container{
+    margin: auto;
+    max-width: 35%;
+}
+
+.com-header{
+    font-size: 150px;
+    font-family: 'latoblack';
+}
+
+.big-com-desc{
+    font-family: 'latoregular';
+    color: dimgray;
+}
+
+.big-com-title{
+    font-weight: bold;
+    padding-top: 10px;
+    font-family: 'latoblack';
+}
+
+.subscribe-container{
+    margin: auto;
+    max-width: 100%;
+    height: 450px;
+    position: relative;
+    background-color: rgb(222, 179, 126);
+}
+
+.subscribe-sub-container{
+    margin: auto;
+    max-width: 40%;
+}
+
+.big-title{
+    margin-top: 25px;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'latoblack';
+}
+
+.subscribe-content{
+    font-weight: lighter;
+    margin-top: 15px;
+    color: dimgray;
+    font-family: 'latoregular';
+}
+
+.subscriber-email{
+    margin-top: 20px;
+    width: 70%;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 35px;
+    border: none;
+    font-family: 'latoregular';
+}
+
+.subscriber-submit{
+    border-radius: 35px;
+    border: none;
+    padding: 8.90px 25px;
+    background-color: rgb(127, 119, 112);
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: 'latoregular';
+    left: -7%;
+}
+
+footer{
+    max-width: 100%;
+    background-color: rgb(127, 119, 112);
+    color: white;
+    font-family: Calibri, sans-serif;
+}
+
+.main-footer-grid-container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.intro-container{
+    padding-bottom: 40px;
+}
+
+.intro-title{
+    margin: 25px 40px;
+    /* font-weight: bold; */
+    font-size: 25px;
+}
+
+.intro-desc{
+    margin-left: 40px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.btn-facebook{
+    padding: 5px 10px;
+    background-color: white;
+    margin-left: 40px;
+    color: dimgray;
+    border-radius: 20px;
+}
+
+.btn-insta{
+    padding: 5px 8px;
+    background-color: white;
+    color: dimgray;
+    border-radius: 20px;
+}
+
+.btn-twitter{
+    padding: 5px 7px;
+    background-color: white;
+    color: dimgray;
+    border-radius: 20px;
+}
+
+/* .about-container{
+    max-width: 20%;
+}
+
+.services-container{
+    max-width: 20%;
+}
+
+.others-container{
+    max-width: 20%;
+} */
+
+.intro-2-title{
+    margin-top: 25px;
+    /* margin: 25px; */
+    /* font-weight: bold; */
+    font-size: 25px;
+}
+
+.sub-intro-container{
+    padding-bottom: 40px;
+    margin-right: 100px;
+}
+
+.sub-intro-container ul{
+    list-style-type: none;
+    padding-top: 20px;
+    font-weight: lighter;
+}
+
+.sub-intro-container li a{
+    text-decoration: none;
+    color: white;
+}

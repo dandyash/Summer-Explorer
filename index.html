@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Summer Explorer</title>
+</head>     
+<body>
+    <!-- HEADER WITH TOP NAVBAR -->
+    <header>
+        <div class="container">
+            <div class="header-box">
+                <div class="header-logo">
+                    <a href="#"> <img src="images/logo.png" alt=""> </a>
+                </div>
+                <div class="header-right">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#" class="active">HOME</a></li>
+                            <li><a href="#">MENU</a></li>
+                            <li><a href="#">OUR STORY</a></li>
+                            <li><a href="#">CONTACT US</a></li>
+                        </ul>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text">
+                        <div class="search-icon">
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="myNav" class="overlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                        <a href="javascript:void(0)" onclick="close_menu()" class="closebtn" id="close_menu">
+                            <div class="strip burger-strip">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </a>
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <form action="" class="search-form">
+                                <input type="text" placeholder="Search" name="search">
+                                <button type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                            <a href="#">Home</a>
+                            <a href="#">Services</a>
+                            <a href="#">Clients</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        
+                    </div>
+                    <a href="javascript:void(0)" class="openbtn" onclick="open_menu()" id="openbtn">
+                        <div class="strip burger-strip">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- BANNER CONTAINER WITH HERO IMAGE AND TEXT -->
+    <div class="banner-container">
+        <img src="images/slid.png" alt="">
+        <div class="container">
+            <div class="content-container">
+                <h2>IT' S TIME FOR HIKING</h2>
+                <h3>LOREMIPSUM DOLOR</h3>
+                <a href="#" class="btn-white">READ MORE</a>
+                <p class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere soluta ad amet consectetur adipisicing elit. amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sub Header TITLE = "Let's GO" -->
+    <div class="sub-header-container">
+        <h2>LET'S GO</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Cumque. consectetur adipisicing elit Cumque.</p>
+    </div>
+
+    <!-- CARD CONTAINER -->
+    <div class="card-img-container">
+        <div class="container">
+            <div class="card-container">
+                <!-- 1st CARD -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/Pl1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet, consecutor adipiscing elit vivamus.</p>
+                    </div>
+                </div>
+                <!-- 2nd CARD -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/Pl2.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet, consecutor adipiscing elit vivamus.</p>
+                    </div>
+                </div>
+                <!-- 3rd CARD -->
+                <div class="card">
+                    <div class="card-img">
+                        <img src="images/Pl3.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem Ipsum Dolor Sit Amet, consecutor adipiscing elit vivamus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BACKGROUND IMAGE WITH SHOWMORE BUTTON -->
+        <div class="card-back-img-container">
+            <img src="images/Design.png" alt="">
+            <a href="#" class="btn-gray">SHOW MORE</a>
+        </div>
+    </div>
+
+    <!-- Alt IMG AND CONTENT 1 -->
+    <div class="alt-img-container-left">
+        <div class="img-part">
+            <img src="images/dis1.png" alt="">
+        </div>
+        <div class="content-part">
+            <div class="alt-content-container">
+                <h2>Discount up to 50% All Excursions</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus iste consectetur tempore perferendis omnis quae laudantium, repudiandae in, at porro facere cum nihil vitae aliquid mollitia nesciunt!</p>
+                <a href="#" class="btn-sand">READ MORE</a>
+            </div>
+        </div>
+    </div>
+    <!-- Alt IMG AND CONTENT 2 -->
+    <div class="alt-img-container-right">
+        <div class="content-part">
+            <div class="alt-content-container">
+                <h2>Discount up to 50% All Excursions</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus iste consectetur tempore perferendis omnis quae laudantium, repudiandae in, at porro facere cum nihil vitae aliquid mollitia nesciunt!</p>
+                <a href="#" class="btn-sand">READ MORE</a>
+            </div>
+        </div>
+        <div class="img-part">
+            <img src="images/dis2.png" alt="">
+        </div>
+    </div>
+
+    <!-- DESC CONTAINER -->
+    <div class="long-content-container">
+        <img src="images/Design.png" alt="">
+        <div class="long-content">
+            <h2>Hiking In The Mountains</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ducimus earum accusantium rem asperiores dicta officia dolorum laborum eos.</p>
+        </div>
+    </div>
+
+    <!-- HREO IMAGE CONTAINER -->
+    <div class="hero-container">
+        <img src="images/explore.png" alt="">
+        <div class="container">
+            <div class="hero-content">
+                <h2>EXPLORE</h2>
+                <h3>THE WORLD</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMMENTS-CARD-CONTAINER -->
+    <div class="comment-card-container">
+        <div class="container">
+            <div class="comment-card-flex-container">
+                <div class="comment-card">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt possimus accusantium minima ducimus in unde.</p>
+                </div>
+                <div class="comment-card">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt possimus accusantium minima ducimus in unde.</p>
+                </div>
+                <div class="comment-card">
+                    <h3>lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sunt possimus accusantium minima ducimus in unde.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LARGE COMMENT CONTAINER -->
+    <div class="comment-container">
+        <div class="comment">
+            <h2>"</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem facere quis iure porro. Odit, aut error assumenda rerum delectus ex? Unde, ipsum!</p>
+            <h3>Lorem Ipsum</h3>
+        </div>
+        <img src="images/Shadow.png" alt="">
+    </div>
+
+    <!-- SUBSCRIPTION CONTAINER -->
+    <div class="subscription-container">
+        <div class="subscription-part">
+            <div class="subscription-content">
+                <h2>Title Here</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem molestias, minima eum deleniti esse alias.</p>
+                <form action="" class="subscription-email">
+                    <input type="text" placeholder="Your Email" name="email">
+                    <input type="submit" value="SUBSCRIBE" name="email-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-flex-container">
+            <div class="title-container">
+                <h2>Title Here</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ad atque nobis assumenda odio aut placeat repudiandae.</p>
+                <a href="#" class="btn-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" class="btn-insta"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" class="btn-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="sub-container">
+                <h2 class="intro-2-title">About</h2>
+                    <ul>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Brand Guidelines</a></li>
+                        <li><a href="#">Terms And Conditions</a></li>
+                        <li><a href="#">Private Policy</a></li>
+                    </ul>
+            </div>
+            <div class="sub-container">
+                <h2 class="intro-2-title">Services</h2>
+                    <ul>
+                        <li><a href="#">How To Order</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Promo</a></li>
+                        <li><a href="#">Payment Method</a></li>
+                    </ul>
+            </div>
+            <div class="sub-container">
+                <h2 class="intro-2-title">Other</h2>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function open_close_menu(){
+            var btn = document.getElementById("open_menu");
+            
+        }
+
+    function open_menu() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    /* Close when someone clicks on the "x" symbol inside the overlay */
+    function close_menu() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    </script>
+    <script src="https://kit.fontawesome.com/ed680f4ec4.js" crossorigin="anonymous"></script>
+</body>
+</html>
